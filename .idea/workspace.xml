@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f76f92f-7f12-44d6-a424-c63111e8b0ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="4f76f92f-7f12-44d6-a424-c63111e8b0ed" name="Changes" comment="1.Tạo user-service">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/order-service/spring-boot-microservice.order-service.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/user-service/spring-boot-microservice.user-service.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/spring-boot-microservice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +30,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/user-service">
       <ProjectState />
     </projectState>
@@ -26,23 +43,21 @@
         <task path="$PROJECT_DIR$/user-service">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/order-service">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/api-gateway">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="demo" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="demo" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="demo" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="spring-boot-microservice" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -62,45 +77,61 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "TranVanNghia170735"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;TranVanNghia170735&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/TranVanNghia170735/spring-boot-microservice.git",
-    "accountId": "1c4aac14-fd33-4ca5-a335-d916d7888411"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/TranVanNghia170735/spring-boot-microservice.git&quot;,
+    &quot;accountId&quot;: &quot;1c4aac14-fd33-4ca5-a335-d916d7888411&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="398mdPHZRMXXi0BkcPnSN5yiTPt" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.user-service [:com.user_service.Application.main()].executor": "Run",
-    "Gradle.user-service [build].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/J/Java/Java-note/Java-micro-service/spring-boot-microservice",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build spring-boot-microservice.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.spring-boot-microservice [:api-gateway:com.api_gateway.Application.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.spring-boot-microservice [:order-service:com.order_service.Application.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.spring-boot-microservice:order-service [:order-service:com.order_service.Application.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.spring-boot-microservice:order-service [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.spring-boot-microservice:order-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.user-service [:com.user_service.Application.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.user-service [:user-service:com.user_service.Application.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.user-service [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:com.api_gateway.Application.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:order-service:com.order_service.Application.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice:api-gateway [clean].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;I do mind&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/J/Java/Java-note/Java-micro-service/spring-boot-microservice&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Application">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="Application.Application (1)">
+    <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.user_service.Application" />
-      <module name="demo.main" />
+      <module name="spring-boot-microservice.user-service.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.user_service.*" />
@@ -111,10 +142,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="user-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="com.api_gateway.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.api_gateway.Application" />
+      <module name="spring-boot-microservice.api-gateway.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api_gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.order_service.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.order_service.Application" />
+      <module name="spring-boot-microservice.order-service.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.order_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/user-service" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -122,7 +179,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value=":api-gateway:clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -133,10 +190,18 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.Application (1)" />
+      <item itemvalue="Application.com.api_gateway.Application" />
+      <item itemvalue="Application.com.order_service.Application" />
+      <item itemvalue="Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:clean]" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application" />
-        <item itemvalue="Gradle.user-service [build]" />
+        <item itemvalue="Application.com.order_service.Application" />
+        <item itemvalue="Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:clean]" />
+        <item itemvalue="Application.com.api_gateway.Application" />
+        <item itemvalue="Application.Application (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -149,5 +214,8 @@
       <updated>1770086159001</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.bat" />
   </component>
 </project>
