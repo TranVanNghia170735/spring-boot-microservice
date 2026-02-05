@@ -4,17 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f76f92f-7f12-44d6-a424-c63111e8b0ed" name="Changes" comment="2.Tạo Order service, Api-gateway, và config lại build.gradle theo mô hình microservice">
-      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="4f76f92f-7f12-44d6-a424-c63111e8b0ed" name="Changes" comment="3.Tích hợp Eureka Discovery Server">
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/client/UserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/dto/OrderResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,40 +94,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build spring-boot-microservice.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.spring-boot-microservice [:api-gateway:com.api_gateway.Application.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.spring-boot-microservice [:order-service:com.order_service.Application.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.spring-boot-microservice:order-service [:order-service:com.order_service.Application.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.spring-boot-microservice:order-service [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.spring-boot-microservice:order-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.user-service [:com.user_service.Application.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.user-service [:user-service:com.user_service.Application.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.user-service [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:com.api_gateway.Application.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:discovery-server:com.discovery_server.Application.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:order-service:com.order_service.Application.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice:api-gateway [clean].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SHELLCHECK.PATH&quot;: &quot;I do mind&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/J/Java/Java-note/Java-micro-service/spring-boot-microservice&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Application.executor": "Run",
+    "Gradle.Build spring-boot-microservice.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.spring-boot-microservice [:api-gateway:com.api_gateway.Application.main()].executor": "Run",
+    "Gradle.spring-boot-microservice [:order-service:com.order_service.Application.main()].executor": "Run",
+    "Gradle.spring-boot-microservice:order-service [:order-service:com.order_service.Application.main()].executor": "Run",
+    "Gradle.spring-boot-microservice:order-service [build].executor": "Run",
+    "Gradle.spring-boot-microservice:order-service [clean].executor": "Run",
+    "Gradle.user-service [:com.user_service.Application.main()].executor": "Run",
+    "Gradle.user-service [:user-service:com.user_service.Application.main()].executor": "Debug",
+    "Gradle.user-service [build].executor": "Run",
+    "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:clean].executor": "Run",
+    "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:com.api_gateway.Application.main()].executor": "Run",
+    "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:discovery-server:com.discovery_server.Application.main()].executor": "Run",
+    "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:order-service:com.order_service.Application.main()].executor": "Debug",
+    "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [build].executor": "Run",
+    "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice:api-gateway [clean].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SHELLCHECK.PATH": "I do mind",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/J/Java/Java-note/Java-micro-service/spring-boot-microservice/user-service/src/main/java/com/user_service",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager" selected="Application.com.user_service.Application">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\J\Java\Java-note\Java-micro-service\spring-boot-microservice\user-service\src\main\java\com\user_service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.com.order_service.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.discovery_server.Application" />
       <module name="spring-boot-microservice.discovery-server.main" />
@@ -230,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770173938837</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="3.Tích hợp Eureka Discovery Server">
+      <option name="closed" value="true" />
+      <created>1770257846307</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1770257846307</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -238,6 +256,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2.Tạo Order service, Api-gateway, và config lại build.gradle theo mô hình microservice" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.Tạo Order service, Api-gateway, và config lại build.gradle theo mô hình microservice" />
+    <MESSAGE value="3.Tích hợp Eureka Discovery Server" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.Tích hợp Eureka Discovery Server" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 package com.user_service.controller;
 
+import com.user_service.dto.UserDto;
 import com.user_service.model.User;
 import com.user_service.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -22,6 +23,14 @@ public class UserController {
     @GetMapping
     public List<User> getAllUsers(){
         return userRepository.findAll();
+    }
+
+
+    @GetMapping("/{id}")
+    public UserDto getUserById(@PathVariable Long id) {
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+        return new UserDto(user.getId(), user.getName(), user.getEmail());
     }
 
 
