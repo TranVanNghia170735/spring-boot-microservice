@@ -3,4 +3,5 @@ rootProject.name = 'spring-boot-microservice'
 include 'api-gateway'
 include 'order-service'
 include 'user-service'
+include 'discovery-server'
 

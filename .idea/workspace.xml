@@ -4,24 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f76f92f-7f12-44d6-a424-c63111e8b0ed" name="Changes" comment="1.Tạo user-service">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/order-service/spring-boot-microservice.order-service.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/user-service/spring-boot-microservice.user-service.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/repository/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    <list default="true" id="4f76f92f-7f12-44d6-a424-c63111e8b0ed" name="Changes" comment="2.Tạo Order service, Api-gateway, và config lại build.gradle theo mô hình microservice">
+      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/spring-boot-microservice.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +104,9 @@
     &quot;Gradle.user-service [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:clean].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:com.api_gateway.Application.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:discovery-server:com.discovery_server.Application.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:order-service:com.order_service.Application.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice:api-gateway [clean].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -128,13 +122,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Application (1)">
-    <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.user_service.Application" />
-      <module name="spring-boot-microservice.user-service.main" />
+  <component name="RunManager" selected="Application.com.user_service.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.discovery_server.Application" />
+      <module name="spring-boot-microservice.discovery-server.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.user_service.*" />
+          <option name="PATTERN" value="com.discovery_server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,7 +162,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="com.user_service.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.user_service.Application" />
+      <module name="spring-boot-microservice.user-service.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.user_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -179,7 +186,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":api-gateway:clean" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -191,17 +198,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Application (1)" />
+      <item itemvalue="Application.Application" />
+      <item itemvalue="Application.com.user_service.Application" />
       <item itemvalue="Application.com.api_gateway.Application" />
       <item itemvalue="Application.com.order_service.Application" />
-      <item itemvalue="Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:clean]" />
+      <item itemvalue="Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [build]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.order_service.Application" />
-        <item itemvalue="Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:clean]" />
         <item itemvalue="Application.com.api_gateway.Application" />
-        <item itemvalue="Application.Application (1)" />
+        <item itemvalue="Application.com.user_service.Application" />
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [build]" />
+        <item itemvalue="Application.com.order_service.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -213,9 +222,22 @@
       <option name="presentableId" value="Default" />
       <updated>1770086159001</updated>
     </task>
+    <task id="LOCAL-00001" summary="2.Tạo Order service, Api-gateway, và config lại build.gradle theo mô hình microservice">
+      <option name="closed" value="true" />
+      <created>1770173938837</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1770173938837</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.bat" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2.Tạo Order service, Api-gateway, và config lại build.gradle theo mô hình microservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.Tạo Order service, Api-gateway, và config lại build.gradle theo mô hình microservice" />
   </component>
 </project>

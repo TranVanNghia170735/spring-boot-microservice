@@ -25,6 +25,9 @@
       <module name="spring-boot-microservice.api-gateway" options="-parameters" />
       <module name="spring-boot-microservice.api-gateway.main" options="-parameters" />
       <module name="spring-boot-microservice.api-gateway.test" options="-parameters" />
+      <module name="spring-boot-microservice.discovery-server" options="-parameters" />
+      <module name="spring-boot-microservice.discovery-server.main" options="-parameters" />
+      <module name="spring-boot-microservice.discovery-server.test" options="-parameters" />
       <module name="spring-boot-microservice.order-service" options="-parameters" />
       <module name="spring-boot-microservice.order-service.main" options="-parameters" />
       <module name="spring-boot-microservice.order-service.test" options="-parameters" />

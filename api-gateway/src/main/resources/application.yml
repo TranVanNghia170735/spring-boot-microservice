@@ -10,11 +10,18 @@ spring:
     gateway:
       routes:
         - id: user-service
-          uri: http://localhost:8081
+#          uri: http://localhost:8081
+          uri: lb://user-service # dùng service name đăng ký với Eureka, service này phải trùng với spring.application.name=user-service
           predicates:
             - Path=/api/users/**
 
         - id: order-service
-          uri: http://localhost:8082
+#          uri: http://localhost:8082
+          uri: lb://order-service
           predicates:
             - Path=/api/orders/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
