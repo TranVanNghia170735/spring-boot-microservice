@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f76f92f-7f12-44d6-a424-c63111e8b0ed" name="Changes" comment="3.Tích hợp Eureka Discovery Server">
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/client/UserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/dto/OrderResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/dto/UserDto.java" afterDir="false" />
+    <list default="true" id="4f76f92f-7f12-44d6-a424-c63111e8b0ed" name="Changes" comment="4.Tích hợp OpenFeign - Gọi service như gọi hàm">
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/executionHistory/executionHistory.bin" afterDir="false" />
@@ -16,10 +14,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,12 +104,12 @@
     "Gradle.spring-boot-microservice:order-service [build].executor": "Run",
     "Gradle.spring-boot-microservice:order-service [clean].executor": "Run",
     "Gradle.user-service [:com.user_service.Application.main()].executor": "Run",
-    "Gradle.user-service [:user-service:com.user_service.Application.main()].executor": "Debug",
+    "Gradle.user-service [:user-service:com.user_service.Application.main()].executor": "Run",
     "Gradle.user-service [build].executor": "Run",
     "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:clean].executor": "Run",
     "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:com.api_gateway.Application.main()].executor": "Run",
     "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:discovery-server:com.discovery_server.Application.main()].executor": "Run",
-    "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:order-service:com.order_service.Application.main()].executor": "Debug",
+    "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:order-service:com.order_service.Application.main()].executor": "Run",
     "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [build].executor": "Run",
     "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice:api-gateway [clean].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -132,7 +131,7 @@
       <recent name="D:\J\Java\Java-note\Java-micro-service\spring-boot-microservice\user-service\src\main\java\com\user_service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.order_service.Application">
+  <component name="RunManager" selected="Application.com.user_service.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.discovery_server.Application" />
       <module name="spring-boot-microservice.discovery-server.main" />
@@ -248,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770257846307</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="4.Tích hợp OpenFeign - Gọi service như gọi hàm">
+      <option name="closed" value="true" />
+      <created>1770276172984</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1770276172984</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -257,6 +264,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2.Tạo Order service, Api-gateway, và config lại build.gradle theo mô hình microservice" />
     <MESSAGE value="3.Tích hợp Eureka Discovery Server" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.Tích hợp Eureka Discovery Server" />
+    <MESSAGE value="4.Tích hợp OpenFeign - Gọi service như gọi hàm" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.Tích hợp OpenFeign - Gọi service như gọi hàm" />
   </component>
 </project>
