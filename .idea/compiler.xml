@@ -9,6 +9,7 @@
         </processorPath>
         <module name="spring-boot-microservice.order-service.main" />
         <module name="spring-boot-microservice.user-service.main" />
+        <module name="spring-boot-microservice.notification-service.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
@@ -28,6 +29,9 @@
       <module name="spring-boot-microservice.discovery-server" options="-parameters" />
       <module name="spring-boot-microservice.discovery-server.main" options="-parameters" />
       <module name="spring-boot-microservice.discovery-server.test" options="-parameters" />
+      <module name="spring-boot-microservice.notification-service" options="-parameters" />
+      <module name="spring-boot-microservice.notification-service.main" options="-parameters" />
+      <module name="spring-boot-microservice.notification-service.test" options="-parameters" />
       <module name="spring-boot-microservice.order-service" options="-parameters" />
       <module name="spring-boot-microservice.order-service.main" options="-parameters" />
       <module name="spring-boot-microservice.order-service.test" options="-parameters" />

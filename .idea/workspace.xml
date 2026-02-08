@@ -4,21 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f76f92f-7f12-44d6-a424-c63111e8b0ed" name="Changes" comment="4.Tích hợp OpenFeign - Gọi service như gọi hàm">
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/service/UserService.java" afterDir="false" />
+    <list default="true" id="4f76f92f-7f12-44d6-a424-c63111e8b0ed" name="Changes" comment="5.Kết nối Redis và Cache dữ liệu users trong Spring boot.">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/1283740169/spring-boot-microservice.notification-service.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/notification_service/config/KafkaConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/notification_service/event/OrderPlacedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/notification_service/listener/OrderEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/notification_service/service/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/model/OrderPlacedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/services/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/userdb.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/userdb.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/test/java/com/discovery_server/ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/order_service/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user_service/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,8 +124,12 @@
     "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:clean].executor": "Run",
     "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:api-gateway:com.api_gateway.Application.main()].executor": "Run",
     "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:discovery-server:com.discovery_server.Application.main()].executor": "Run",
+    "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:notification-service:build].executor": "Run",
+    "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:notification-service:clean].executor": "Run",
+    "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:notification-service:com.notification_service.Application.main()].executor": "Run",
     "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [:order-service:com.order_service.Application.main()].executor": "Run",
     "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [build].executor": "Run",
+    "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [clean].executor": "Run",
     "Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice:api-gateway [clean].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -130,9 +149,25 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\J\Java\Java-note\Java-micro-service\spring-boot-microservice\user-service\src\main\java\com\user_service" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.notification_service.event" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.com.user_service.Application">
+  <component name="RunManager" selected="Application.com.notification_service.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.api_gateway.Application" />
+      <module name="spring-boot-microservice.api-gateway.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api_gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.discovery_server.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.discovery_server.Application" />
       <module name="spring-boot-microservice.discovery-server.main" />
       <extension name="coverage">
@@ -145,12 +180,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.api_gateway.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.api_gateway.Application" />
-      <module name="spring-boot-microservice.api-gateway.main" />
+    <configuration name="com.notification_service.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.notification_service.Application" />
+      <module name="spring-boot-microservice.notification-service.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.api_gateway.*" />
+          <option name="PATTERN" value="com.notification_service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -184,42 +219,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Application.Application" />
-      <item itemvalue="Application.com.user_service.Application" />
-      <item itemvalue="Application.com.api_gateway.Application" />
+      <item itemvalue="Application.com.discovery_server.Application" />
       <item itemvalue="Application.com.order_service.Application" />
-      <item itemvalue="Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [build]" />
+      <item itemvalue="Application.com.notification_service.Application" />
+      <item itemvalue="Application.com.user_service.Application" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.api_gateway.Application" />
         <item itemvalue="Application.com.user_service.Application" />
-        <item itemvalue="Application.Application" />
-        <item itemvalue="Gradle.user-service::J:Java:Java-note:Java-micro-service:spring-boot-microservice [build]" />
         <item itemvalue="Application.com.order_service.Application" />
+        <item itemvalue="Application.com.discovery_server.Application" />
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.com.notification_service.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -255,16 +268,26 @@
       <option name="project" value="LOCAL" />
       <updated>1770276172984</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="5.Kết nối Redis và Cache dữ liệu users trong Spring boot.">
+      <option name="closed" value="true" />
+      <created>1770282890988</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1770282890988</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="docker-compose.yml" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.bat" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2.Tạo Order service, Api-gateway, và config lại build.gradle theo mô hình microservice" />
     <MESSAGE value="3.Tích hợp Eureka Discovery Server" />
     <MESSAGE value="4.Tích hợp OpenFeign - Gọi service như gọi hàm" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.Tích hợp OpenFeign - Gọi service như gọi hàm" />
+    <MESSAGE value="5.Kết nối Redis và Cache dữ liệu users trong Spring boot." />
+    <option name="LAST_COMMIT_MESSAGE" value="5.Kết nối Redis và Cache dữ liệu users trong Spring boot." />
   </component>
 </project>

@@ -19,4 +19,5 @@ public class Order {
     private Long userId;
     private String product;
     private Double price;
+    private Double total;
 }
